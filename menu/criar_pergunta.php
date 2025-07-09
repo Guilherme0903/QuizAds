@@ -24,7 +24,6 @@
     </form>
 
     <br>
-    <a href="exibir_perguntas.php">Ver todas as perguntas</a>
 </body>
 
 </html>

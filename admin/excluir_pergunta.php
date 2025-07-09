@@ -9,7 +9,7 @@ if (isset($_GET['id'])) {
     $stmt->bind_param("i", $id);
 try {
     if ($stmt->execute()) { 
-        header("Location: /QuizAds/menu/exibir_perguntas.php");
+        header("Location: /QuizAds/login/pagina2.php");
         exit();
     } else {
         // Verifica se é erro de integridade referencial (código 1451)

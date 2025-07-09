@@ -93,7 +93,7 @@ while ($row = $result_op->fetch_assoc()) {
     </form>
 
     <br>
-    <!-- <a href="exibir_perguntas.php">Voltar</a> -->
+    <a href="../login/pagina2.php">Voltar</a>
 </body>
 <?php
 // Verifica se a URL tem o parâmetro ?sucesso no arqivo atualizar_pergunta.php

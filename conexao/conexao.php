@@ -2,7 +2,7 @@
 $host = 'localhost';
 $dbname = 'quiz_ads';
 $user = 'root';
-$password = 'cabecadedragao'; // coloque aqui sua senha do MySQL
+$password = 'aluno'; // coloque aqui sua senha do MySQL
 
 $conn = new mysqli($host, $user, $password, $dbname);
 

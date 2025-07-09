@@ -33,8 +33,7 @@ try {
     $conn->commit();
 
     echo "Pergunta salva com sucesso! <br>";
-    echo "<a href='criar_pergunta.php'>Cadastrar outra</a> | ";
-    echo "<a href='../menu/exibir_perguntas.php'>Ver todas</a>";
+    echo "<a href='../login/pagina2.php'>Voltar ao menu</a>";
 } catch (Exception $e) {
     $conn->rollback();
     echo "Erro ao salvar: " . $e->getMessage();
