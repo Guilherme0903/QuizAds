@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS perguntas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    texto VARCHAR(255) NOT NULL
+);
+
+
+CREATE TABLE IF NOT EXISTS opcoes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    pergunta_id INT NOT NULL,
+    texto VARCHAR(255) NOT NULL,
+    correta BOOLEAN DEFAULT 0,
+    FOREIGN KEY (pergunta_id) REFERENCES perguntas(id) ON DELETE CASCADE
+);

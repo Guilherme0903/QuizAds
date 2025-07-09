@@ -1,0 +1,24 @@
+CREATE TABLE opcoes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    pergunta_id INT NOT NULL,
+    texto VARCHAR(255) NOT NULL,
+    correta BOOLEAN DEFAULT 0,
+    FOREIGN KEY (pergunta_id) REFERENCES perguntas(id) ON DELETE CASCADE
+);
+
+CREATE TABLE perguntas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    texto VARCHAR(255) NOT NULL
+);
+
+-- cadastro de pessoa (pode ser um jogador ou um adm), cada jogador vai ter uma pontuação
+create table pessoa(
+	id int auto_increment primary key,
+    email varchar(100) not null,
+    senha varchar(50) not null,
+    administrador boolean default 0,
+    pontos int not null default 0
+);
+alter table pessoa add column apelido varchar(50);
+ALTER TABLE pessoa MODIFY COLUMN senha VARCHAR(255);
+select * from pessoa;
